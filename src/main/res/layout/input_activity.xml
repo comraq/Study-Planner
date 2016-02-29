@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Exam Name"
+      android:layout_weight="0.3"
+      android:id="@+id/text_view_title"/>
+
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="Enter Exam Name"
+      android:layout_weight="0.7"
+      android:id="@+id/edit_text_title"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="Start Date"
+      android:id="@+id/text_view_start_date_label"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.7"
+      android:hint="Set Start Date"
+      android:id="@+id/text_view_start_date"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="Start Time"
+      android:id="@+id/text_view_start_time_label"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.7"
+      android:hint="Set Start Time"
+      android:id="@+id/text_view_start_time"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="End Date"
+      android:id="@+id/text_view_end_date_label"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.7"
+      android:hint="Set End Date"
+      android:id="@+id/text_view_end_date"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="End Time"
+      android:id="@+id/text_view_end_time_label"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.7"
+      android:hint="Set End Time"
+      android:id="@+id/text_view_end_time"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="Study Length(Hours)"
+      android:layout_gravity="center_vertical"
+      android:id="@+id/text_view_study_length_label"/>
+
+    <NumberPicker
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:layout_height="80dp"
+      android:id="@+id/number_picker_study_length"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="0.05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="Session Length(Hours)"
+      android:id="@+id/text_view_session_length_label"/>
+
+    <Spinner
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:layout_height="40dp"
+      android:id="@+id/spinner_session_length"
+      android:entries="@array/session_length_array"
+      android:scrollIndicators="top"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="0.8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Notes"
+      android:id="@+id/text_view_notes"/>
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:hint="Additional Information"
+      android:id="@+id/edit_text_notes"/>
+  </LinearLayout>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Schedule Study Sessions!"
+    android:id="@+id/button_submit"
+    android:layout_gravity="center_horizontal"/>
+</LinearLayout>
